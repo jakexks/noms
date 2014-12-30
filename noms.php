@@ -8,8 +8,6 @@ foreach (glob("images/*") as $im) {
   $arr[$i] = $im;
   $i++;
 }
-# echo "there are " . count($arr) . " images";
-# echo var_dump($arr);
 $im = $arr[rand(0,count($arr)-1)];
 switch(strtolower(pathinfo($im, PATHINFO_EXTENSION))) {
   case "jpg":

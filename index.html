@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>noms</title>
+    <style type="text/css" media="screen">
+      body {
+        overflow: hidden;
+      }
+      div {
+        bottom: 0;
+        height: 247px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        width: 500px;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <noscript>
+         <img src="noms.jpg" alt="noms"/>
+      </noscript>
+    </div>
+    <script type="text/javascript">
+    var img = document.createElement("img");
+    img.onload = function() {
+      var div = document.getElementsByTagName("div")[0];
+      div.style.width = this.width + "px";
+      div.style.height = this.height + "px";
+      div.appendChild(img);
+    }
+    img.setAttribute("src", "noms.jpg");
+    img.setAttribute("alt", "noms");
+    </script>
+  </body>
+</html>
